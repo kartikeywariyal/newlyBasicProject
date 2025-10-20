@@ -1,11 +1,8 @@
-import React from "react"
-import { useNavigate } from "react-router-dom"
-
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
-    const navigate = useNavigate()
+    const navigate = useNavigate();
     return (
-        
         <div className="flex flex-col items-center justify-center text-center px-6 py-16 bg-gray-50 min-h-screen">
             <h1 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
                 Welcome to <span className="text-indigo-600">ShopVerse</span>
@@ -17,9 +14,12 @@ export default function Home() {
                 one place. Fast delivery, trusted quality, and secure payments.
             </p>
 
-            <button className="px-6 py-3 bg-indigo-600 text-white rounded-lg text-lg hover:bg-indigo-700 transition" onClick={()=>{
-                navigate('/products')
-            }}>
+            <button
+                className="px-6 py-3 bg-indigo-600 text-white rounded-lg text-lg hover:bg-indigo-700 transition"
+                onClick={() => {
+                    navigate('/products');
+                }}
+            >
                 Explore Products
             </button>
 
@@ -53,5 +53,5 @@ export default function Home() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
